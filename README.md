@@ -5,13 +5,23 @@ pip install django
 pip install graphene_django
 pip install graphql_django
 ```
-#### Installed App
+####Configuring Graphene Django
+
+On the **{django_project_name}/settings.py**, add the following:
 ```
-'graphene_django'
+INSTALLED_APPS = (
+    # At the end of all the default packages
+    'graphene_django',
+)
 ```
-### Schema Settings
+#### Schema Settings
 ```
 GRAPHENE = {
-    'SCHEMA': 'Project_Name.schema.schema'
+    'SCHEMA': '{django_project_name}.schema.schema',
 }
+```
+####Creating database table
+```
+python manage.py makemigrations
+python manage.py migrate
 ```
