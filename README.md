@@ -34,7 +34,7 @@ A schema is a collection of objects that may contain multiple fields. Each field
 
 A schema is strictly typed and describes all possible data that can be received. GraphQL query schema and the structure of your database are not connected.
 
-**Create the file {django_project_name}/schema.py for schema.
+**Create the file {django_project_name}/schema.py for schema**.
 
 ```
 import graphene
@@ -47,4 +47,4 @@ class Query({app_name}.schema.Query, graphene.ObjectType):
 # Create schema
 schema = graphene.Schema(query=Query)
 ```
-**Creating your first query
+**Creating your first query**
