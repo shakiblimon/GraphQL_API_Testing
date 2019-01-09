@@ -48,3 +48,5 @@ class Query({app_name}.schema.Query, graphene.ObjectType):
 schema = graphene.Schema(query=Query)
 ```
 **Creating your first query**
+>GraphQL query language is all about selecting fields on objects.
+
